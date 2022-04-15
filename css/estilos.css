@@ -50,7 +50,6 @@
 .first-section {
     height: 100vh;
     width: 100%;
-    background-image: url(/img/ba1.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -98,26 +97,116 @@
     text-align: center;
     font-size: 0.8em;
     font-weight: 500;
-    height: 2.2em;
-    width: 6.6em;
+    height: 1.8em;
+    width: 6em;
     text-align: center;
+    padding: 2px;
 }
 
 .third-section {
     height: 80vh;
-    width: 100%;
-    background-color: #969da2;
+    width: 100%;    
+    display: flex;
 }
 
 .fondo1 {
-    background-image: url(/img/honolulu.jpg);
-    background-position: center;
     background-size: cover;
-    height: 25em;
+    height: 80vh;
+    width: 50%;
+}
+
+.fondo2 {
+    background-color: #333a40;
+    height: 80vh;
+    width: 50%;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .fourth-section {
-    height: 100vh;
+    margin-top: 1em;
+    height: 70vh;
     width: 100%;
-    background-color: beige;
+}
+
+.fourth-section p:nth-of-type(2) {
+    text-align: center;
+}
+
+.fourth-section p:nth-of-type(2) span {
+    border-bottom: dotted;
+}
+
+form {
+    margin: auto;
+    width: 60%;
+    padding: 5px;
+}
+form textarea {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+form input {
+    width: 48%;
+    height: 2em;
+    padding: 5px;
+}
+
+form input:nth-of-type(2){
+    margin-left: 26px;
+}
+
+form p {
+    font-size: small;
+    color: #a1abb5;
+}
+
+form button {
+    width: 100%;
+    height: 2.5em;
+    background-color: #96c93e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+
+form button:hover {
+    color: black;
+    background-color: darkgreen;
+}
+
+footer {
+    margin-top: 1em;
+    background-color: #353a40;
+    display: flex;
+    height: 5em;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,82,113,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.footer-link {
+    display: block;
+    text-decoration: none;
+    width: 6em;
+    color: white;
+}
+
+.footer-link:hover {
+    color: #969da2;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    
 }
