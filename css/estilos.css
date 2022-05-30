@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+/* ************************ NavBar ************************* */
 .navbar {
     background-color: #353a40;
     display: flex;
@@ -47,6 +48,7 @@
     font-size: 1em;
 }
 
+/* ************************ Home ************************* */
 .first-section {
     height: 100vh;
     width: 100%;
@@ -192,6 +194,7 @@ form button:hover {
     background-color: darkgreen;
 }
 
+/* ************************ Footer ************************* */
 footer {
     background-color: #353a40;
     display: flex;
@@ -220,6 +223,7 @@ footer {
     flex-wrap: wrap;
 }
 
+/* ************************ Media Queries ************************* */
 @media (max-width: 1440px) {
     .second-section{
         margin-bottom: 1em;

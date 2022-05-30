@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ************************ NavBar ************************* */
+.navbar {
+    background-color: #353a40;
+    display: flex;
+    height: 5em;
+}
+
+.nav_link {
+    color: #969da2;
+    text-decoration: none;
+    margin: 0 7px 0 7px;
+}
+
+.nav_link:hover,
+.nav_link:active {
+    color: #fffffd;
+}
+
+.nav_link-last{
+    color: #30a347;
+    text-decoration: none;
+}
+
+.nav_link-last:hover,
+.nav_link-last:active {
+    color: #fffffd;
+}
+
+.navbar-nav{
+    margin-left: 18em;
+    background-color: #353a40;
+}
+
+.navbar-brand {
+    margin-left: 4em;
+    display: flex;
+    
+}
+
+.logo-title {
+    color: #fffffd;
+    margin-top: 15px;
+    font-size: 1em;
+}
+/* ************************ Tickets ************************* */
+
+.tickets-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+.first-div, .main-div, .third-div {
+    height: 130vh;
+}
+
+.first-div, .third-div {
+    width: 20%;
+}
+
+.main-div {
+    width: 60%;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card { 
+    border: 2px #CDD7E2 solid;
+    width: 30%;
+    height: 15em;
+    margin: 1%;
+    padding: 10px;
+}
+
+.card p:nth-of-type(1) {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.card p:nth-of-type(2) {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.card p:nth-of-type(3) {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.card p:nth-of-type(4) {
+    text-align: center;
+    color: grey;
+}
+
+.card:hover {
+    border: 2px #FFDD76 solid;
+}
+
+.first-p {
+    margin-top: 10px;
+    text-align: center;
+}
+.second-p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+form {
+    margin: auto;
+    width: 95%;
+    padding: 5px;
+
+}
+
+.first-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input[type="text"] {
+    display: block;
+    height: 2.5em;
+    width: 49%;
+    margin: 0 0.5% 0 0.5%;
+    border-radius: 4px;
+}
+
+input[type="email"] {
+    display: block;
+    width: 99%;
+    height: 2.5em;
+    margin: 20px 0.5% 0 0.5%;
+    border-radius: 4px;
+}
+
+.second-inputs {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+label {
+    margin: 20px 0 0 5px;
+    display: inline-block;
+    width: 49%;
+    
+}
+
+#categoria { 
+    width: 49%;
+    margin: 0;
+    height: 2.5em;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.total {
+    margin: 20px 0;
+    width: 100%;
+    height: 3.5em;
+    padding: 12px;
+    background-color: #CCE5FF;
+    border-radius: 4px;
+}
+
+form button {
+    width: 48.5%;
+    height: 2.5em;
+    margin: 0 0.5% 0 0.5%;
+    background-color: #96c93e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+
+form button:hover {
+    color: black;
+    background-color: darkgreen;
+}
+
+/* ************************ Footer ************************* */
+footer {
+    background-color: #353a40;
+    display: flex;
+    height: 5em;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,82,113,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.footer-link {
+    display: block;
+    text-decoration: none;
+    width: 6em;
+    color: white;
+}
+
+.footer-link:hover {
+    color: #969da2;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* ************************ Media Queries ************************* */
+@media (max-width: 1320px) {
+    label {
+        width: 45%;   
+    }
+}
+
+@media (max-width: 1283px) {
+
+    .navbar-nav{
+        margin-left: 8em;
+
+    }
+
+}
+
+@media (max-width: 1140px) {
+
+    .first-div, .third-div {
+        width: 10%;
+    }
+    
+    .main-div {
+        width: 80%;
+    }
+
+    label {
+        width: 49%;
+        
+    }
+    
+}
+
+@media (max-width: 1100px) {
+
+    .navbar-nav{
+        margin-left: 2em;
+    }
+
+    label {
+        width: 45%;
+        
+    }
+    
+}
+
+@media (max-width: 840px) {
+
+    .first-div, .third-div {
+        width: 5%;
+    }
+    
+    .main-div {
+        width: 90%;
+    }
+
+    .card { 
+        height: 18em;
+        margin: 1%;
+        padding: 10px;
+    }
+    
+}
+
+
+@media (max-width: 743px) {
+
+    footer {
+        height: 7em;
+    }
+}
+
+@media (max-width: 649px) {
+    
+    footer {
+        height: 8em;
+    }
+
+    .first-div, .third-div {
+        width: 0%;
+    }
+    
+    .main-div {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 529px) {
+    
+    footer {
+        height: 10em;
+    }
+
+    .card p:nth-of-type(1) {
+        font-size: 20px;
+    }
+    
+    .card p:nth-of-type(2) {
+        font-size: 15px;
+    }
+    
+    .card p:nth-of-type(3) {
+        font-size: 20px;
+    }
+    
+    form button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 490px) {
+    .navbar-brand {
+        margin-left: 0;
+ 
+    }
+
+    footer {
+        height: 15em;
+    }
+
+    .card p:nth-of-type(1) {
+        font-size: 15px;
+    }
+    
+    .card p:nth-of-type(2) {
+        font-size: 10px;
+    }
+    
+    .card p:nth-of-type(3) {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 335px) {
+
+    .card p:nth-of-type(1) {
+        font-size: 10px;
+    }
+    
+    .card p:nth-of-type(2) {
+        font-size: 5px;
+    }
+    
+    .card p:nth-of-type(3) {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 305px) {
+    footer {
+        height: 19em;
+    }
+
+    .navbar {
+        height: 8em;
+    }
+}
