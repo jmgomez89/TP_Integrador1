@@ -23,3 +23,7 @@ function mostrarPrecio(){
     
     
 }
+
+function reinicio() {
+    precio.innerText = 0
+}
